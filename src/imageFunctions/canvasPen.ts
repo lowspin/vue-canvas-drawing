@@ -41,7 +41,7 @@ export class CanvasPen {
             // canvas2.style.cursor = "crosshair"
             if(this.penDown) {
                 this.penPos = pos
-                const erasesize = 14;
+                const erasesize = 4*this.penWidth;
                 const x = Math.max(this.penPos.x, 0) - 0.5*erasesize;
                 const y = Math.max(this.penPos.y, 0) - 0.5*erasesize;
                 ctx.clearRect(x, y, erasesize, erasesize)
