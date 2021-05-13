@@ -1,0 +1,16 @@
+
+/* override PrimeVue button */
+.p-button {
+    background: #fb8211;
+}
+.p-button.p-button-outlined {
+    border-color: #fb8211;
+    color: #fb8211;
+}
+.p-button:enabled:hover {
+    background: #b02b1b;
+}
+.p-button.p-button-text {
+    color: #fb8211;
+}
+
