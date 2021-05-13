@@ -14,9 +14,9 @@
             <div class="pen-width-control-container">
                 <!-- <h5>Pen Width: {{penWidth}}</h5> -->
                 <!-- <Slider v-model="penWidth" :step="2" :min="2" :max="6" /> -->
-                <Button class="p-button-sm" :class="{ 'p-button-outlined': penWidth!='2' }" @click="switchPenWidth(2)" >thin</Button>
-                <Button class="p-button-sm" :class="{ 'p-button-outlined': penWidth!='4' }" @click="switchPenWidth(4)">medium</Button>
-                <Button class="p-button-sm" :class="{ 'p-button-outlined': penWidth!='6' }" @click="switchPenWidth(6)">thick</Button>
+                <Button class="p-button-sm" :class="{ 'p-button-outlined': penWidth!=2 }" @click="switchPenWidth(2)" >thin</Button>
+                <Button class="p-button-sm" :class="{ 'p-button-outlined': penWidth!=4 }" @click="switchPenWidth(4)">medium</Button>
+                <Button class="p-button-sm" :class="{ 'p-button-outlined': penWidth!=6 }" @click="switchPenWidth(6)">thick</Button>
             </div>
         </div>
 
